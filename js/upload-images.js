@@ -51,7 +51,7 @@ const fetchImagesAsync = imagesList => {
 const renderImage = newData => {
   let box = newData.reduce((acc, el) => acc + `<img src=${el} alt="">`, "");
 
-  gallery.innerHTML = box;
+  gallery.innerHTML += box;
   console.log("render: ", newData);
 };
 
